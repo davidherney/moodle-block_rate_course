@@ -144,7 +144,7 @@ class block_rate_course extends block_list
         }
 
         $avg = $this->get_rating($courseid);
-        $res = '<img src="'.$OUTPUT->pix_url('star'.$avg, 'block_rate_course').'" alt="'.$alt.'"/><br/>'.$ratedby;
+        $res = '<img src="'.$OUTPUT->image_url('star'.$avg, 'block_rate_course').'" alt="'.$alt.'"/><br/>'.$ratedby;
 
         if ($return) {
             return $res;
